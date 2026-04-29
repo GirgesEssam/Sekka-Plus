@@ -1,0 +1,329 @@
+:root {
+  --ch-color: black;
+  --t-color: white;
+  --bg-color: #fdfdfde0;
+  --text-color: black;
+  --section-bg: #f5f5f5;
+  --scolor: red;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: "Cairo", "Roboto", sans-serif;
+  color: var(--text-color);
+  font-family: "work Sans", sans-serif;
+  transition: 0s;
+}
+/* dark mode */
+.dark {
+  --ch-color: white;
+  --t-color: black;
+  --scolor: white;
+  --bg-color: #252525eb;
+  --text-color: #ffffff;
+  --section-bg: #252525;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 40px auto 0 auto;
+}
+
+/*small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/*medium */
+@media (min-width: 992px) {
+  .contauner {
+    width: 970px;
+  }
+}
+
+/*large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* start payment */
+.payment {
+  background-image: url(../project_pic/new_bg.jpg);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 100px;
+}
+.payment .p {
+  padding: 30px 10px 20px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.container {
+  background-color: var(--section-bg);
+  background-size: cover;
+  padding: 0;
+  border-radius: 30px;
+}
+
+.box1 {
+  padding: 60px 20px;
+  border: 1px solid #9c2121a8;
+  border-radius: 30px;
+  box-shadow: inset 0 0 5px 1px #e56510;
+  flex-basis: 100%;
+  position: relative;
+}
+.price {
+  text-align: center;
+}
+.price .pr {
+  padding: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.price .egp {
+  color: var(--text-color);
+}
+.price p {
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 23px;
+}
+.box1 .method {
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px 1px #e56510;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box1 .method p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+.box1 .method img {
+  width: 160px;
+}
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\///// */
+.method {
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+.method:hover {
+  transform: scale(1.03);
+}
+.method .active {
+  border: 2px solid #007bff;
+  background: rgba(0, 123, 255, 0.1);
+}
+.B disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.box1 .method .images img {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+.back {
+  position: relative;
+  padding: 4px 17px;
+  background-color: #570707;
+  width: 90px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 9px 6px #812104;
+  border: 2px solid #ff5b2a7d;
+}
+.back::before {
+  position: absolute;
+  content: "\2B05";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  left: 11px;
+}
+.back a {
+  margin-left: 15px;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+}
+
+.B {
+  padding: 10px 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: #a60a0a;
+  border-radius: 10px;
+  box-shadow: inset 0 0 15px 0px #ff922acf;
+  border: 1px solid #ff922acf;
+  margin: 20px 0;
+  color: white;
+}
+
+.langBtn,
+.modeBtn {
+  background-color: #b30606;
+  color: white;
+  position: absolute;
+  top: 25px;
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  font-size: 19px;
+  border: 3px solid var(--text-color);
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+}
+.modeBtn {
+  position: absolute;
+  top: 80px;
+}
+.sep {
+  font-size: 35px;
+}
+.icon-flip [dir="rtl"] {
+  transform: scaleX(-1);
+}
+/* end payment */
+/* start last */
+
+.yourTicket {
+  background-color: #c70505fc;
+  font-size: 35px;
+  padding: 25px;
+  color: var(--text-color);
+  font-weight: bold;
+  text-align: center;
+}
+.yourTicket .backBtn {
+  left: 30px;
+  color: var(--text-color);
+  top: 14px;
+  background-color: #c70505fc;
+  border: 3px solid #c70505fc;
+  font-size: 35px;
+}
+.yourTicket .shareBtn {
+  color: var(--text-color);
+  right: 30px;
+  font-size: 35px;
+  top: 14px;
+  background-color: #c70505fc;
+  border: 3px solid #c70505fc;
+}
+.backBtn:hover,
+.shareBtn:hover {
+  color: var(--t-color);
+}
+.z {
+  padding: 0;
+}
+.head {
+  background-color: #c70505fc;
+  direction: ltr;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 50px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.head i {
+  font-size: 33px;
+}
+.head .dir {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin: 50px 10px 10px;
+  align-items: center;
+}
+
+.pic {
+  border-bottom: 3px dashed var(--text-color);
+  border-top: 3px dashed var(--text-color);
+  margin: 50px 30px;
+}
+.last img {
+  margin: 50px 0;
+  width: 50%;
+  height: fit-content;
+}
+.last .info {
+  margin: 0 30px;
+}
+.pand {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.pand .ar {
+  color: var(--scolor);
+}
+.pand .eng {
+  color: #877878;
+}
+
+.last .Butons {
+  margin: 50px 20px;
+  display: flex;
+  direction: ltr;
+  justify-content: space-between;
+}
+.download,
+.share {
+  font-size: 27px;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #c70505fc;
+  color: white;
+  width: 210px;
+}
+.download i,
+.share i {
+  position: absolute;
+  inset-inline-start: 6px;
+  top: 12px;
+}
+.share i {
+  inset-inline-start: 20px;
+}
+.share {
+  background-color: black;
+  width: 190px;
+}
+
+/* end last */

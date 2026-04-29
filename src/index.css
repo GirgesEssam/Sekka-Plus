@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@theme{
+  --color-enr-300:red;
+}
+
+@layer base{
+  /* body{
+    @apply ;
+  } */
+}
+
+@layer utilities{
+  .dark{
+    background-color: #1e1e1e;
+    color: white;
+  }
+}
+
+@layer components{
+
+}
+
